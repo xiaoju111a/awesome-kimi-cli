@@ -1,0 +1,122 @@
+<p align="center">
+  <img src="https://avatars.githubusercontent.com/u/129152888?s=200&v=4" alt="Kimi CLI Logo" width="120">
+</p>
+
+<h1 align="center">Awesome Kimi CLI</h1>
+
+<p align="center">
+  <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
+</p>
+
+<p align="center">
+  <a href="README.md">English</a> | <a href="README_CN.md">中文</a>
+</p>
+
+> 🚀 精选的 Kimi CLI 资源、工具、脚本和使用技巧合集
+
+[Kimi CLI](https://github.com/MoonshotAI/kimi-cli) 是 Kimi AI 助手的命令行工具，让你在终端中与 Kimi 进行交互。
+
+## 目录
+
+- [官方资源](#官方资源)
+- [安装与配置](#安装与配置)
+- [使用技巧](#使用技巧)
+- [插件与扩展](#插件与扩展)
+- [集成工具](#集成工具)
+- [社区资源](#社区资源)
+- [使用 Kimi CLI 的项目](#使用-kimi-cli-的项目)
+
+## 官方资源
+
+- [Kimi CLI 官方仓库](https://github.com/MoonshotAI/kimi-cli) - 官方源代码
+- [Kimi CLI 官方文档](https://www.kimi.com/coding/docs/kimi-cli.html) - 官方使用文档
+- [Kimi 官网](https://kimi.moonshot.cn/) - Kimi AI 官方网站
+- [Moonshot AI](https://www.moonshot.cn/) - Kimi 背后的公司
+
+## 安装与配置
+
+### 安装方式
+
+Kimi CLI 发布在 PyPI 上，推荐使用 [uv](https://docs.astral.sh/uv/) 安装：
+
+```bash
+# 安装 Kimi CLI
+uv tool install --python 3.13 kimi-cli
+
+# 验证安装
+kimi --help
+
+# 升级到最新版本
+uv tool upgrade kimi-cli --no-cache
+```
+
+### 配置指南
+
+**首次设置：** 在工作目录运行 `kimi`，然后发送 `/setup` 进行初始配置。
+
+## 使用技巧
+
+### 常用命令
+
+- `/help` - 查看帮助
+- `/mcp` - 查看 MCP 服务器状态
+- `/setup` - 配置 API Key
+- `Ctrl-X` - 切换 Shell 模式
+
+## 插件与扩展
+
+- MCP 支持 - 可以通过 MCP 协议扩展工具。创建 `~/.kimi/mcp.json` 或使用 `--mcp-config-file`：
+
+```json
+{
+  "mcpServers": {
+    "fetch": {
+      "command": "uvx",
+      "args": ["mcp-server-fetch"]
+    },
+    "context7": {
+      "url": "https://mcp.context7.com/mcp",
+      "headers": {
+        "CONTEXT7_API_KEY": "YOUR_API_KEY"
+      }
+    }
+  }
+}
+```
+
+- [zsh-kimi-cli](https://github.com/MoonshotAI/zsh-kimi-cli) - Zsh 插件
+
+## 集成工具
+
+- IDE 集成 - 支持 Zed、JetBrains 等 ACP 兼容编辑器，配置示例：
+
+```json
+{
+  "agent_servers": {
+    "Kimi CLI": {
+      "command": "kimi",
+      "args": ["--acp"]
+    }
+  }
+}
+```
+
+- ACP 协议 - Agent Client Protocol 支持，用于编辑器集成
+
+## 社区资源
+
+- [Moonshot AI 论坛](https://forum.moonshot.ai) - 参与讨论、提问和分享关于 Moonshot AI 平台和 API 的想法
+
+## 使用 Kimi CLI 的项目
+
+*欢迎贡献！*
+
+---
+
+## 贡献指南
+
+欢迎提交 PR 来完善这个列表！详见 [CONTRIBUTING.md](CONTRIBUTING.md)
+
+## License
+
+[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
