@@ -23,6 +23,7 @@
 - [使用技巧](#使用技巧)
 - [插件与扩展](#插件与扩展)
 - [集成工具](#集成工具)
+- [Prompts](#prompts)
 - [社区资源](#社区资源)
 - [使用 Kimi CLI 的项目](#使用-kimi-cli-的项目)
 
@@ -102,6 +103,14 @@ uv tool upgrade kimi-cli --no-cache
 ```
 
 - ACP 协议 - Agent Client Protocol 支持，用于编辑器集成
+
+## Prompts
+
+实用的 Kimi CLI 提示词合集，详见 [prompts/](prompts/)。
+
+- [代码审查](prompts/code-review.md) - 代码审查提示词
+- [Git](prompts/git.md) - Git 工作流提示词
+- [文档生成](prompts/documentation.md) - 文档生成提示词
 
 ## 社区资源
 

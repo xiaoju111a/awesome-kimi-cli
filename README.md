@@ -23,6 +23,7 @@
 - [Tips & Tricks](#tips--tricks)
 - [Plugins & Extensions](#plugins--extensions)
 - [Integrations](#integrations)
+- [Prompts](#prompts)
 - [Community](#community)
 - [Projects Using Kimi CLI](#projects-using-kimi-cli)
 
@@ -102,6 +103,14 @@ uv tool upgrade kimi-cli --no-cache
 ```
 
 - ACP Protocol - Agent Client Protocol support for editor integration
+
+## Prompts
+
+A collection of useful prompts for Kimi CLI. See [prompts/](prompts/) for more.
+
+- [Code Review](prompts/code-review.md) - Code review prompts
+- [Git](prompts/git.md) - Git workflow prompts
+- [Documentation](prompts/documentation.md) - Documentation generation prompts
 
 ## Community
 
