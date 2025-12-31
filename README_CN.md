@@ -47,6 +47,9 @@ uv tool install --python 3.13 kimi-cli
 # 验证安装
 kimi --help
 
+# 启动 Kimi CLI
+uv run kimi
+
 # 升级到最新版本
 uv tool upgrade kimi-cli --no-cache
 ```
