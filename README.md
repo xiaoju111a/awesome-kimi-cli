@@ -87,6 +87,7 @@ A collection of useful prompts for Kimi CLI. See [prompts/](prompts/) for more.
 
 - [AionUi](https://github.com/iOfficeAI/AionUi) - Official ACP-compatible client that auto-detects and integrates with Kimi CLI via ACP protocol, offering a modern GUI
 - [Wise-Will-agent](https://github.com/zjrwtx/Wise-Will-agent) - Open-source AI education agent with thinking different design
+- [wemac](https://github.com/x5iu/wemac) - It just works WeChat RPA group chat bot for Mac
 
 ---
 

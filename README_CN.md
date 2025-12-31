@@ -87,6 +87,7 @@ uv tool upgrade kimi-cli --no-cache
 
 - [AionUi](https://github.com/iOfficeAI/AionUi) - ACP 官方兼容客户端，自动检测并通过 ACP 协议集成 Kimi CLI，提供现代化图形界面
 - [Wise-Will-agent](https://github.com/zjrwtx/Wise-Will-agent) - 开源 AI 教育 Agent，thinking different design
+- [wemac](https://github.com/x5iu/wemac) - It just works 的 Mac 版微信 RPA 群聊机器人
 
 ---
 
