@@ -66,6 +66,7 @@ uv tool upgrade kimi-cli --no-cache
 
 ## Plugins & Extensions
 
+- [MCP Servers](https://github.com/modelcontextprotocol/servers) - Official MCP server collection
 - MCP Support - Extend tools via MCP protocol. Create `~/.kimi/mcp.json` or use `--mcp-config-file`:
 
 ```json
@@ -108,17 +109,13 @@ uv tool upgrade kimi-cli --no-cache
 
 A collection of useful prompts for Kimi CLI. See [prompts/](prompts/) for more.
 
-- [Code Review](prompts/code-review.md) - Code review prompts
-- [Git](prompts/git.md) - Git workflow prompts
-- [Documentation](prompts/documentation.md) - Documentation generation prompts
-
 ## Community
 
 - [Moonshot AI Forum](https://forum.moonshot.ai) - Join discussions, ask questions, and share ideas about the Moonshot AI platform and APIs
 
 ## Projects Using Kimi CLI
 
-*Contributions welcome!*
+- [AionUi](https://github.com/iOfficeAI/AionUi) - Official ACP-compatible client that auto-detects and integrates with Kimi CLI via ACP protocol, offering a modern GUI
 
 ---
 

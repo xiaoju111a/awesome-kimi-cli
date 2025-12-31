@@ -8,9 +8,13 @@ Copy the prompt content and use it with Kimi CLI, or save it as a file and refer
 
 ## Categories
 
-- [Code Review](code-review.md)
-- [Git](git.md)
-- [Documentation](documentation.md)
+- [Frontend](frontend.md) - Frontend development prompts
+- [Backend](backend.md) - Backend development prompts
+- [Fullstack](fullstack.md) - Fullstack development prompts
+- [Code Review](code-review.md) - Code review prompts
+- [Git](git.md) - Git workflow prompts
+- [Documentation](documentation.md) - Documentation generation prompts
+- [Prompt Template](prompt-template.md) - Best practice prompt templates
 
 ---
 
