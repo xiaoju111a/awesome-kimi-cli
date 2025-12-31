@@ -67,42 +67,12 @@ uv tool upgrade kimi-cli --no-cache
 ## Plugins & Extensions
 
 - [MCP Servers](https://github.com/modelcontextprotocol/servers) - Official MCP server collection
-- MCP Support - Extend tools via MCP protocol. Create `~/.kimi/mcp.json` or use `--mcp-config-file`:
-
-```json
-{
-  "mcpServers": {
-    "fetch": {
-      "command": "uvx",
-      "args": ["mcp-server-fetch"]
-    },
-    "context7": {
-      "url": "https://mcp.context7.com/mcp",
-      "headers": {
-        "CONTEXT7_API_KEY": "YOUR_API_KEY"
-      }
-    }
-  }
-}
-```
-
+- MCP Support - Extend tools via MCP protocol. Create `~/.kimi/mcp.json` or use `--mcp-config-file`
 - [zsh-kimi-cli](https://github.com/MoonshotAI/zsh-kimi-cli) - Zsh plugin for Kimi CLI
 
 ## Integrations
 
-- IDE Integration - Supports ACP-compatible editors like Zed, JetBrains, etc. Example config:
-
-```json
-{
-  "agent_servers": {
-    "Kimi CLI": {
-      "command": "kimi",
-      "args": ["--acp"]
-    }
-  }
-}
-```
-
+- IDE Integration - Supports ACP-compatible editors like Zed, JetBrains, etc.
 - ACP Protocol - Agent Client Protocol support for editor integration
 
 ## Prompts

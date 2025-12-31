@@ -67,42 +67,12 @@ uv tool upgrade kimi-cli --no-cache
 ## 插件与扩展
 
 - [MCP Servers](https://github.com/modelcontextprotocol/servers) - 官方 MCP 服务器合集
-- MCP 支持 - 可以通过 MCP 协议扩展工具。创建 `~/.kimi/mcp.json` 或使用 `--mcp-config-file`：
-
-```json
-{
-  "mcpServers": {
-    "fetch": {
-      "command": "uvx",
-      "args": ["mcp-server-fetch"]
-    },
-    "context7": {
-      "url": "https://mcp.context7.com/mcp",
-      "headers": {
-        "CONTEXT7_API_KEY": "YOUR_API_KEY"
-      }
-    }
-  }
-}
-```
-
+- MCP 支持 - 可以通过 MCP 协议扩展工具。创建 `~/.kimi/mcp.json` 或使用 `--mcp-config-file`
 - [zsh-kimi-cli](https://github.com/MoonshotAI/zsh-kimi-cli) - Zsh 插件
 
 ## 集成工具
 
-- IDE 集成 - 支持 Zed、JetBrains 等 ACP 兼容编辑器，配置示例：
-
-```json
-{
-  "agent_servers": {
-    "Kimi CLI": {
-      "command": "kimi",
-      "args": ["--acp"]
-    }
-  }
-}
-```
-
+- IDE 集成 - 支持 Zed、JetBrains 等 ACP 兼容编辑器
 - ACP 协议 - Agent Client Protocol 支持，用于编辑器集成
 
 ## Prompts
