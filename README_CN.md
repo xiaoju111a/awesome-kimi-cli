@@ -92,6 +92,7 @@ uv tool upgrade kimi-cli --no-cache
 - [Wise-Will-agent](https://github.com/zjrwtx/Wise-Will-agent) - 开源 AI 教育 Agent，thinking different design
 - [wemac](https://github.com/x5iu/wemac) - It just works 的 Mac 版微信 RPA 群聊机器人
 - [kimi-cli-for-xbow](https://github.com/m-sec-org/kimi-cli-for-xbow) - 基于 kimi-cli 二次开发的 CTF 竞赛专用 Agent
+- [toad](https://github.com/batrachianai/toad) - 终端中的统一 AI 接口
 
 ---
 

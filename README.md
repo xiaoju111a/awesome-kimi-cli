@@ -92,6 +92,7 @@ A collection of useful prompts for Kimi CLI. See [prompts/](prompts/) for more.
 - [Wise-Will-agent](https://github.com/zjrwtx/Wise-Will-agent) - Open-source AI education agent with thinking different design
 - [wemac](https://github.com/x5iu/wemac) - It just works WeChat RPA group chat bot for Mac
 - [kimi-cli-for-xbow](https://github.com/m-sec-org/kimi-cli-for-xbow) - CTF-specialized agent based on kimi-cli
+- [toad](https://github.com/batrachianai/toad) - A unified interface for AI in your terminal
 
 ---
 
