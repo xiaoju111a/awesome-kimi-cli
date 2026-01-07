@@ -25,7 +25,7 @@
 - [Integrations](#integrations)
 - [Prompts](#prompts)
 - [Community](#community)
-- [Projects Using Kimi CLI](#projects-using-kimi-cli)
+- [Kimi CLI Related Projects](#kimi-cli-related-projects)
 
 ## Official Resources
 
@@ -86,7 +86,7 @@ A collection of useful prompts for Kimi CLI. See [prompts/](prompts/) for more.
 
 - [Moonshot AI Forum](https://forum.moonshot.ai) - Join discussions, ask questions, and share ideas about the Moonshot AI platform and APIs
 
-## Projects Using Kimi CLI
+## Kimi CLI Related Projects
 
 - [AionUi](https://github.com/iOfficeAI/AionUi) - Official ACP-compatible client that auto-detects and integrates with Kimi CLI via ACP protocol, offering a modern GUI
 - [Wise-Will-agent](https://github.com/zjrwtx/Wise-Will-agent) - Open-source AI education agent with thinking different design

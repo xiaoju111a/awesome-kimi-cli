@@ -25,7 +25,7 @@
 - [集成工具](#集成工具)
 - [Prompts](#prompts)
 - [社区资源](#社区资源)
-- [使用 Kimi CLI 的项目](#使用-kimi-cli-的项目)
+- [与 Kimi CLI 相关的项目](#与-kimi-cli-相关的项目)
 
 ## 官方资源
 
@@ -86,7 +86,7 @@ uv tool upgrade kimi-cli --no-cache
 
 - [Moonshot AI 论坛](https://forum.moonshot.ai) - 参与讨论、提问和分享关于 Moonshot AI 平台和 API 的想法
 
-## 使用 Kimi CLI 的项目
+## 与 Kimi CLI 相关的项目
 
 - [AionUi](https://github.com/iOfficeAI/AionUi) - ACP 官方兼容客户端，自动检测并通过 ACP 协议集成 Kimi CLI，提供现代化图形界面
 - [Wise-Will-agent](https://github.com/zjrwtx/Wise-Will-agent) - 开源 AI 教育 Agent，thinking different design
