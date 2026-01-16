@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://avatars.githubusercontent.com/u/129152888?s=200&v=4" alt="Kimi CLI Logo" width="120">
-</p>
+
 
 <h1 align="center">Awesome Kimi CLI</h1>
 
