@@ -1,0 +1,20 @@
+{
+  "name": "hello-agent",
+  "version": "1.0.0",
+  "description": "Hello World example using Kimi Agent SDK",
+  "type": "module",
+  "scripts": {
+    "start": "tsx index.ts"
+  },
+  "dependencies": {
+    "@moonshot-ai/kimi-agent-sdk": "^0.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
