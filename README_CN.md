@@ -23,7 +23,6 @@
 - [使用技巧](#使用技巧)
 - [插件与扩展](#插件与扩展)
 - [集成工具](#集成工具)
-- [Prompts](#prompts)
 - [社区资源](#社区资源)
 - [与 Kimi CLI 相关的项目](#与-kimi-cli-相关的项目)
 
@@ -78,10 +77,6 @@ uv tool upgrade kimi-cli --no-cache
 - IDE 集成 - 支持 Zed、JetBrains 等 ACP 兼容编辑器
 - ACP 协议 - Agent Client Protocol 支持，用于编辑器集成
 
-## Prompts
-
-实用的 Kimi CLI 提示词合集，详见 [prompts/](prompts/)。
-
 ## 社区资源
 
 - [Moonshot AI 论坛](https://forum.moonshot.ai) - 参与讨论、提问和分享关于 Moonshot AI 平台和 API 的想法
@@ -95,6 +90,7 @@ uv tool upgrade kimi-cli --no-cache
 - [wemac](https://github.com/x5iu/wemac) - It just works 的 Mac 版微信 RPA 群聊机器人
 - [kimi-cli-for-xbow](https://github.com/m-sec-org/kimi-cli-for-xbow) - 基于 kimi-cli 二次开发的 CTF 竞赛专用 Agent
 - [toad](https://github.com/batrachianai/toad) - 终端中的统一 AI 接口
+- [KimiCode-GUI](https://github.com/ZacharyZhang-NY/KimiCode-GUI) - 基于 Rust + Tauri 2 的 Kimi CLI 桌面 GUI，内嵌 PTY 终端保持与 CLI 完全一致的功能
 
 ---
 

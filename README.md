@@ -21,7 +21,6 @@
 - [Tips & Tricks](#tips--tricks)
 - [Plugins & Extensions](#plugins--extensions)
 - [Integrations](#integrations)
-- [Prompts](#prompts)
 - [Community](#community)
 - [Kimi CLI Related Projects](#kimi-cli-related-projects)
 
@@ -76,10 +75,6 @@ uv tool upgrade kimi-cli --no-cache
 - IDE Integration - Supports ACP-compatible editors like Zed, JetBrains, etc.
 - ACP Protocol - Agent Client Protocol support for editor integration
 
-## Prompts
-
-A collection of useful prompts for Kimi CLI. See [prompts/](prompts/) for more.
-
 ## Community
 
 - [Moonshot AI Forum](https://forum.moonshot.ai) - Join discussions, ask questions, and share ideas about the Moonshot AI platform and APIs
@@ -93,6 +88,7 @@ A collection of useful prompts for Kimi CLI. See [prompts/](prompts/) for more.
 - [wemac](https://github.com/x5iu/wemac) - It just works WeChat RPA group chat bot for Mac
 - [kimi-cli-for-xbow](https://github.com/m-sec-org/kimi-cli-for-xbow) - CTF-specialized agent based on kimi-cli
 - [toad](https://github.com/batrachianai/toad) - A unified interface for AI in your terminal
+- [KimiCode-GUI](https://github.com/ZacharyZhang-NY/KimiCode-GUI) - Desktop GUI for Kimi CLI built with Rust + Tauri 2, embedding the real CLI inside a PTY-powered terminal
 
 ---
 

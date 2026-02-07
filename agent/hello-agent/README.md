@@ -1,211 +1,71 @@
-# Hello Agent
+# Hello World - Kimi Agent SDK
 
-A simple example project using Kimi Agent SDK.
+A simple example demonstrating basic usage of Kimi Agent SDK.
 
-## Features
+## Overview
 
-- ✅ Basic Kimi Agent SDK usage
-- ✅ Streaming response handling
-- ✅ Multi-turn conversation support
-- ✅ Tool call visibility
-- ✅ Token usage statistics
-- ✅ Error handling
+This example shows how to:
+- Create a session with Kimi Agent SDK
+- Send a simple prompt
+- Stream and display the response
 
 ## Prerequisites
 
-- Node.js 18+
-- [Kimi CLI](https://github.com/MoonshotAI/kimi-cli) installed and available in PATH
-- Moonshot AI API Key ([Get one here](https://platform.moonshot.ai/))
+- Python 3.12 or higher
+- Kimi CLI installed and in PATH
+- API key from [Moonshot AI](https://platform.moonshot.ai/)
 
 ## Installation
 
 ```bash
-npm install
+# Install dependencies
+uv add kimi-agent-sdk
 ```
 
-## Configuration
+## Setup
 
-1. Copy the environment variables example file:
-```bash
-cp .env.example .env
-```
-
-2. Edit `.env` file and add your API Key:
-```env
-KIMI_API_KEY=your-api-key-here
-```
-
-## Running
+Set your API key:
 
 ```bash
-npm start
+export KIMI_API_KEY="your-api-key-here"
 ```
 
-## Example Output
+## Usage
 
-```
-🤖 Hello Agent - Kimi Agent SDK Example
-
-✅ Session created
-📁 Work directory: /path/to/workspace
-🆔 Session ID: abc123
-
-👤 User: Hello! Please introduce yourself.
-
-🤖 Kimi: Hello! I'm Kimi, an AI assistant developed by Moonshot AI...
-
-📊 Token usage: 150 (input: 50, output: 100)
-
-✅ Status: finished
-
---- Multi-turn Conversation Example ---
-
-👤 User: What can you help me with?
-
-🤖 Kimi: I can help you with various tasks...
-
-👋 Session closed
-```
-
-## Code Explanation
-
-### Create Session
-
-```typescript
-import { createSession } from '@moonshot-ai/kimi-agent-sdk';
-
-const session = createSession({
-  workDir: './workspace',           // Working directory
-  model: 'kimi-k2-thinking-turbo', // Model name
-  thinking: false,                  // Show thinking process
-  yoloMode: true,                   // Auto-approve tool calls
-});
-```
-
-### Send Prompt
-
-```typescript
-const turn = session.prompt('Hello!');
-```
-
-### Handle Response
-
-```typescript
-for await (const event of turn) {
-  // Handle text content
-  if (event.type === 'ContentPart' && event.payload.type === 'text') {
-    console.log(event.payload.text);
-  }
-
-  // Handle tool calls
-  if (event.type === 'ToolCall') {
-    console.log('Using tool:', event.payload.function.name);
-  }
-
-  // Handle token usage
-  if (event.type === 'StatusUpdate' && event.payload.token_usage) {
-    console.log('Token usage:', event.payload.token_usage);
-  }
-}
-```
-
-### Get Result
-
-```typescript
-const result = await turn.result;
-console.log('Status:', result.status); // 'finished' | 'cancelled' | 'max_steps_reached'
-```
-
-### Close Session
-
-```typescript
-await session.close();
-```
-
-## Event Types
-
-Kimi Agent SDK supports the following event types:
-
-- `TurnBegin` - Turn started
-- `StepBegin` - Step started
-- `ContentPart` - Content part (text, thinking, etc.)
-- `ToolCall` - Tool invocation
-- `ToolResult` - Tool execution result
-- `StatusUpdate` - Status update (token usage, etc.)
-- `ApprovalRequest` - Approval request
-
-## Configuration Options
-
-### Session Options
-
-| Option | Type | Default | Description |
-|--------|------|---------|-------------|
-| `workDir` | string | Required | Working directory path |
-| `sessionId` | string | Auto-generated | Session ID (for resuming) |
-| `model` | string | - | Model name |
-| `thinking` | boolean | false | Show thinking process |
-| `yoloMode` | boolean | false | Auto-approve all tool calls |
-| `executable` | string | 'kimi' | Kimi CLI executable path |
-| `env` | object | - | Environment variables |
-
-## Multi-turn Conversation
-
-```typescript
-// First turn
-const turn1 = session.prompt('Hello');
-for await (const event of turn1) { /* ... */ }
-
-// Second turn (maintains context)
-const turn2 = session.prompt('Continue the previous topic');
-for await (const event of turn2) { /* ... */ }
-```
-
-## Error Handling
-
-```typescript
-try {
-  const turn = session.prompt('Your question');
-  for await (const event of turn) {
-    // Handle events
-  }
-  const result = await turn.result;
-} catch (error) {
-  console.error('Error occurred:', error);
-} finally {
-  await session.close();
-}
-```
-
-## Troubleshooting
-
-### Kimi CLI not found
-
-**Solution**: Install Kimi CLI
 ```bash
-npm install -g @moonshot-ai/kimi-cli
+python hello_world.py
 ```
 
-### API Key error
+## What it does
 
-**Solution**: Set environment variable
-```bash
-export KIMI_API_KEY="your-api-key"
+The example sends a simple greeting prompt to Kimi and streams the response back to the console.
+
+## Code Example
+
+**Simple Usage:**
+```python
+from kimi_agent_sdk import prompt
+
+async for msg in prompt("Hello, Kimi! Please introduce yourself in one sentence."):
+    print(msg.extract_text(), end="", flush=True)
 ```
 
-### Working directory does not exist
+**Advanced Usage with Manual Approval:**
+```python
+from kimi_agent_sdk import ApprovalRequest, Session, TextPart
 
-**Solution**: Create working directory
-```bash
-mkdir -p workspace
+async with await Session.create(work_dir=".") as session:
+    async for wire_msg in session.prompt("Your prompt here"):
+        match wire_msg:
+            case TextPart(text=text):
+                print(text, end="", flush=True)
+            case ApprovalRequest() as req:
+                req.resolve("approve")
 ```
 
-## Next Steps
+## Features
 
-- Check [Kimi Agent SDK Documentation](https://github.com/MoonshotAI/kimi-agent-sdk)
-- Try more complex example projects
-- Explore tool calling features
-- Learn session management
-
-## License
-
-MIT License
+1. **High-level API**: Simple `prompt()` function for quick usage
+2. **Low-level API**: `Session` for fine-grained control
+3. **Streaming**: Real-time response streaming
+4. **Approval Handling**: Manual or automatic approval of agent actions
