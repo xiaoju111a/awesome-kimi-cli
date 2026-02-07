@@ -89,6 +89,7 @@ uv tool upgrade kimi-cli --no-cache
 - [kimi-cli-for-xbow](https://github.com/m-sec-org/kimi-cli-for-xbow) - CTF-specialized agent based on kimi-cli
 - [toad](https://github.com/batrachianai/toad) - A unified interface for AI in your terminal
 - [KimiCode-GUI](https://github.com/ZacharyZhang-NY/KimiCode-GUI) - Desktop GUI for Kimi CLI built with Rust + Tauri 2, embedding the real CLI inside a PTY-powered terminal
+- [OKbot](https://github.com/albertwyjoy-bit/OKbot) - Kimi CLI Feishu integration with cross-device session handoff, voice control, browser/Android automation, and dynamic Skills hot-reload
 
 ---
 

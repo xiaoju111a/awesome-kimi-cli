@@ -91,6 +91,7 @@ uv tool upgrade kimi-cli --no-cache
 - [kimi-cli-for-xbow](https://github.com/m-sec-org/kimi-cli-for-xbow) - 基于 kimi-cli 二次开发的 CTF 竞赛专用 Agent
 - [toad](https://github.com/batrachianai/toad) - 终端中的统一 AI 接口
 - [KimiCode-GUI](https://github.com/ZacharyZhang-NY/KimiCode-GUI) - 基于 Rust + Tauri 2 的 Kimi CLI 桌面 GUI，内嵌 PTY 终端保持与 CLI 完全一致的功能
+- [OKbot](https://github.com/albertwyjoy-bit/OKbot) - Kimi CLI 飞书集成，支持跨端 Session 接续、语音操控、浏览器/Android 自动化及动态 Skills 热更新
 
 ---
 
